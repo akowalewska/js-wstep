@@ -10,6 +10,8 @@ osoba.print();
 
 //dodawanie wlasciwosci do obiektu
 osoba.weight = 65;
+
+//klucze podajemy bez nawiasow !!
 osoba.printDetail = function() {
     console.log(this.name + ' ' + this.height + ' ' + this.weight);
 }
