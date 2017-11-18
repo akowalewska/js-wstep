@@ -17,3 +17,22 @@ osoba.printDetail = function() {
 }
 
 osoba.printDetail();
+
+//tworzenie klas
+
+class Osoba {
+    constructor(imie,nazwisko) {
+        this.imie = imie;
+        this.nazwisko = nazwisko;
+    }
+    
+    wyswietlInfo() {
+        console.log(this.imie + ' ' + this.nazwisko);
+    }
+}
+
+var krystian = new Osoba('krystian', 'dziopa');
+krystian.wyswietlInfo();
+
+var marcin = new Osoba('marcin', 'nowak');
+marcin.wyswietlInfo();
