@@ -5,11 +5,12 @@ var tablica = ['marcin', 10, -50, 'anna', 'michal'];
 
 for(var i=0; i < tablica.length; i++) {
     if(i==3) {
-    console.log('indeks: ' + i + ' numer elementu: ' + (i+1) + ' wartosc:' + tablica[i]);
+    break;
         }
+    console.log('indeks: ' + i + ' numer elementu: ' + (i+1) + ' wartosc:' + tablica[i]);
 }
 
-//forEach
+/*//forEach
 
 tablica.forEach(function(element, index) {
     console.log('indeks: ' + index + ' numer elementu: ' + (index+1) + ' wartosc: ' + element);
@@ -21,4 +22,19 @@ var it = 0;
 while(it < 10) {
     console.log(it);
     it++;
+}
+
+//do... while
+
+do {
+    console.log('wynik petli do... while');
+} while ('2' === 2)*/
+
+for(var i=0; i<10; ++i) {
+    if(i == 5) {
+        continue;   
+    } else {
+        console.log(i);
+    }
+    console.log('--');
 }
